@@ -1,5 +1,8 @@
+"use client";
+
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
+import Typewriter from "@/components/ui/Typewriter";
 
 export default function Hero() {
   return (
@@ -9,7 +12,7 @@ export default function Hero() {
         <div className="order-2 lg:order-1">
           <SectionLabel className="mb-4 block">Faramour</SectionLabel>
           <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-charcoal leading-[1.05] mb-8">
-            Dress that reflects the aspects of ourselves✨
+            <Typewriter text="Dress that reflects the aspects of ourselves✨" speed={60} />
           </h1>
           <div className="flex flex-wrap gap-4">
             <a
