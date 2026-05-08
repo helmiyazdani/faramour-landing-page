@@ -3,6 +3,8 @@
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
 import TextGenerateEffect from "@/components/ui/TextGenerateEffect";
+import GradientText from "@/components/ui/GradientText";
+import { motion } from "motion/react";
 
 export default function Hero() {
   return (
@@ -11,12 +13,26 @@ export default function Hero() {
         {/* Text */}
         <div className="order-2 lg:order-1">
           <SectionLabel className="mb-4 block">Faramour</SectionLabel>
-          <TextGenerateEffect
-            words="Dress that reflects the aspects of ourselves✨"
-            className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-charcoal leading-[1.05] mb-8"
-            duration={0.5}
-            staggerDelay={0.15}
-          />
+          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-charcoal leading-[1.05] mb-8">
+            <TextGenerateEffect
+              words="Dress that reflects the aspects of"
+              className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-charcoal"
+              duration={0.5}
+              staggerDelay={0.15}
+            />
+            <motion.span
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 1.25, duration: 0.3 }}
+            >
+              <GradientText
+                text="ourselves✨"
+                gradient="linear-gradient(90deg, #c9a96e 0%, #f0d5a0 25%, #e8b86d 50%, #f0d5a0 75%, #c9a96e 100%)"
+                transition={{ duration: 3, repeat: Infinity, ease: "linear" }}
+                className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl"
+              />
+            </motion.span>
+          </h1>
           <div className="flex flex-wrap gap-4">
             <a
               href="https://www.instagram.com/faramour.id/"
