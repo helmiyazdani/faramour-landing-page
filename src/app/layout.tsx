@@ -12,6 +12,10 @@ export const metadata: Metadata = {
   title: "Faramour — Wear Your Story",
   description:
     "Discover premium, sustainable fashion crafted for the modern individual. Exclusive designs, ethical materials, delivered to your door.",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
 };
 
 export default function RootLayout({
