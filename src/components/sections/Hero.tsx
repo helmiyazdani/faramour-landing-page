@@ -17,10 +17,9 @@ export default function Hero() {
               href="https://www.instagram.com/faramour.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
               target="_blank"
               rel="noopener noreferrer"
+              className="inline-flex items-center justify-center rounded-full bg-accent hover:bg-accent-dark text-white font-semibold px-10 py-4 text-base shadow-md hover:shadow-lg transition-all duration-200"
             >
-              <Button variant="primary" size="lg">
-                Visit Faramour
-              </Button>
+              Visit Faramour
             </a>
           </div>
         </div>
