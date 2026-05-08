@@ -13,9 +13,15 @@ export default function Hero() {
             Dress that reflects the aspects of ourselves✨
           </h1>
           <div className="flex flex-wrap gap-4">
-            <Button variant="primary" size="lg">
-              Visit Faramour
-            </Button>
+            <a
+              href="https://www.instagram.com/faramour.id?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Button variant="primary" size="lg">
+                Visit Faramour
+              </Button>
+            </a>
           </div>
         </div>
 
