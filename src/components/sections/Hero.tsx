@@ -2,7 +2,7 @@
 
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
-import Typewriter from "@/components/ui/Typewriter";
+import TextGenerateEffect from "@/components/ui/TextGenerateEffect";
 
 export default function Hero() {
   return (
@@ -11,9 +11,12 @@ export default function Hero() {
         {/* Text */}
         <div className="order-2 lg:order-1">
           <SectionLabel className="mb-4 block">Faramour</SectionLabel>
-          <h1 className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl font-bold text-charcoal leading-[1.05] mb-8">
-            <Typewriter text="Dress that reflects the aspects of ourselves✨" speed={60} />
-          </h1>
+          <TextGenerateEffect
+            words="Dress that reflects the aspects of ourselves✨"
+            className="font-serif text-5xl sm:text-6xl lg:text-7xl xl:text-8xl text-charcoal leading-[1.05] mb-8"
+            duration={0.5}
+            staggerDelay={0.15}
+          />
           <div className="flex flex-wrap gap-4">
             <a
               href="https://www.instagram.com/faramour.id/"
