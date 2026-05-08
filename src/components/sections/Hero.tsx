@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Button from "@/components/ui/Button";
 import SectionLabel from "@/components/ui/SectionLabel";
 
@@ -24,17 +23,17 @@ export default function Hero() {
           </div>
         </div>
 
-        {/* Image */}
+        {/* Video */}
         <div className="order-1 lg:order-2 relative">
           <div className="relative rounded-3xl overflow-hidden aspect-[4/5] max-h-[600px]">
-            <Image
-              src="/images/hero.png"
-              alt="Faramour model wearing new collection"
-              fill
-              priority
-              className="object-cover object-top"
+            <video
+              src="/images/hero.mp4"
+              autoPlay
+              muted
+              loop
+              playsInline
+              className="w-full h-full object-cover object-top"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-cream/20 to-transparent" />
           </div>
         </div>
       </div>
